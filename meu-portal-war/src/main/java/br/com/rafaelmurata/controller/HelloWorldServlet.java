@@ -25,7 +25,7 @@ public class HelloWorldServlet extends HttpServlet {
 	  @Override
 	  protected void doGet(HttpServletRequest req, HttpServletResponse resp)   throws ServletException, IOException {
 	      resp.setContentType("text/plain");
-	      resp.getWriter().println("Hello, handrolled, guiced AppEngine!");
+	      resp.getWriter().println("Hello, use /resouces to list,delete,update and insert on my object movies");
 	      
 	      SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss.SSS");
 	      resp.getWriter().println("Date is: " + sdf.format(theClass.getDate()));
